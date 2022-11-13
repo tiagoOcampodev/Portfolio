@@ -203,8 +203,9 @@ body header nav footer li a i:hover {
 body main {
   width: 100%;
   position: absolute;
-  left: 250px;
+  left: 120px;
   top: 30%;
+  z-index: 1000000000000;
   color: #fff;
 }
 body main .content {
@@ -256,121 +257,114 @@ body main .content a::after {
 body main .content a:hover::after {
   right: -60px;
 }
-body .cubos {
+body .container {
   position: absolute;
-  right: 30px;
-  top: 100px;
+  width: 30%;
+  height: 100%;
+  right: 0px;
+  top: 50px;
+}
+body .container .circle {
+  position: absolute;
+  background: rgb(131, 131, 200);
+  background: radial-gradient(circle, rgb(131, 131, 200) 4%, rgba(66, 62, 96, 0.555) 50%, rgba(29, 39, 75, 0.562) 100%);
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  right: 40px;
+  top: 40px;
+  z-index: 1;
+}
+body .container .circle2 {
+  position: absolute;
+  background: rgb(131, 131, 200);
+  background: radial-gradient(circle, rgba(131, 131, 200, 0.61) 4%, rgba(103, 97, 144, 0.521) 50%, rgba(61, 69, 96, 0.562) 100%);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  right: 70px;
+  top: 70px;
+  z-index: -1;
+}
+body .container .circle3 {
+  position: absolute;
+  background: rgb(177, 177, 214);
+  background: radial-gradient(circle, rgba(177, 177, 214, 0.623) 4%, rgba(61, 55, 98, 0.555) 50%, rgba(45, 46, 87, 0.692) 100%);
+  width: 580px;
+  height: 580px;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  z-index: 3;
+}
+body .container h2 {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  color: rgb(247, 54, 92);
+  right: 130px;
+  top: 210px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 32px;
+  line-height: 60px;
+  z-index: 1200;
+  font-weight: 900;
+}
+body .container .trasero {
+  position: relative;
+  z-index: 1000;
+}
+body .container .trasero svg {
+  position: absolute;
+  right: 300px;
+  top: 80px;
   width: 250px;
   height: 250px;
-  border-radius: 40px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(1px);
 }
-body .cubos .cubo {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  border-radius: 15px;
-  left: -40px;
-  top: -30px;
-  -webkit-animation: upcubo 2s infinite;
-          animation: upcubo 2s infinite;
-  background-color: rgba(197, 136, 255, 0.541);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(1px);
+body .container .trasero svg:nth-child(2) {
+  right: -20px;
+  top: 10px;
+  width: 250px;
+  height: 250px;
 }
-body .cubos .cubo:nth-child(2) {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  border-radius: 15px;
-  left: 185px;
-  top: 2px;
-  background-color: rgba(255, 89, 233, 0.541);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(1px);
+body .container .trasero svg:nth-child(3) {
+  right: 10px;
+  top: 360px;
+  width: 250px;
+  height: 250px;
 }
-body .cubos .cubo:nth-child(3) {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  border-radius: 15px;
-  left: -10px;
-  top: 200px;
-  background-color: rgba(36, 248, 255, 0.541);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(1px);
-}
-@-webkit-keyframes upcubo {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes upcubo {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-body .cubos .ojo {
-  width: 100px;
-  height: 50px;
-  position: absolute;
-  background: url(/src/img/background.png) no-repeat center center/cover;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-}
-body .cubos .punto {
-  position: absolute;
-  height: 40px;
-  width: 30px;
-  background: linear-gradient(yellow, orange);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-}
-body .container {
+body .container .frontal {
+  z-index: 1300;
   position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  z-index: -1;
-  margin-top: -100vh;
 }
-body .container img {
+body .container .frontal svg {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: contain;
-     object-fit: contain;
+  top: 330px;
+  right: 340px;
+  width: 480px;
+  width: 250px;
+  height: 250px;
+}
+body .container .frontal svg:nth-child(2) {
+  top: 100px;
+  right: -240px;
+  width: 250px;
+  height: 250px;
+}
+body .container .frontal svg:nth-child(3) {
+  right: -10px;
+  top: 330px;
+  width: 250px;
+  height: 250px;
+}
+body .container .moonSvg {
+  width: 400px;
+  position: absolute;
+  right: 40px;
+  top: 120px;
+  z-index: 1000;
 }
 body .button {
   position: absolute;
@@ -822,4 +816,71 @@ body #preloader {
   left: 0;
   z-index: 1000;
   border-radius: 5px;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  z-index: 1000;
+}
+.contenedor header {
+  width: 100%;
+  z-index: 1000;
+}
+.contenedor header .nameIcon {
+  width: 30%;
+  position: absolute;
+}
+.contenedor header .nameIcon h1 {
+  position: relative;
+  font-size: 3em;
+  margin-top: 40px;
+  color: #F2EFEA;
+  text-transform: uppercase;
+  font-family: baskerville;
+  font-style: italic;
+}
+.contenedor header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0%;
+  top: 25vh;
+  border-left: 3px solid #F7F0F5;
+}
+.contenedor header .nav li {
+  margin: 20px 20px;
+  list-style: circle;
+  color: #F2EFEA;
+}
+.contenedor header .nav li a {
+  color: #F7F0F5;
+  font-size: 2em;
+  transition: 0.3s ease-in;
+  font-family: baskerville;
+  font-style: italic;
+}
+.contenedor header .nav li a:hover {
+  text-decoration: line-through;
+  letter-spacing: 2px;
+}
+.contenedor footer {
+  position: absolute;
+  margin: 90vh 0px;
+  width: 30%;
+}
+.contenedor footer li {
+  display: inline;
+  margin-left: 30px;
+  position: relative;
+}
+.contenedor footer li a {
+  color: #F7F0F5;
+  font-size: 2em;
+  transition: 0.25s;
+}
+.contenedor footer li a:hover {
+  color: #C52233;
 }/*# sourceMappingURL=styles.css.map */
