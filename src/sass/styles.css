@@ -567,21 +567,21 @@ body .my-works .works .work.work-one {
   background: url(/src/projectImg/pokedex.png) no-repeat center center/cover;
 }
 body .my-works .works .work.work-two {
-  background: url(/src/projectImg/wall-eControled.png) no-repeat center center/cover;
+  background: url(/src/projectImg/DesarrolloWeb.png) no-repeat center center/cover;
   transform: translateX(50px);
 }
 body .my-works .works .work.work-three {
-  background: url(/src/projectImg/tiagoPiano.png) no-repeat center center/cover;
+  background: url(/src/projectImg/wall-eControled.png) no-repeat center center/cover;
 }
 body .my-works .works .work.work-four {
-  background: url(/src/projectImg/randomColor.png) no-repeat center center/cover;
+  background: url(/src/projectImg/tiagoPiano.png) no-repeat center center/cover;
   transform: translateX(50px);
 }
 body .my-works .works .work.work-five {
-  background: url(/src/projectImg/paralallax.png) no-repeat center center/cover;
+  background: url(/src/projectImg/randomColor.png) no-repeat center center/cover;
 }
 body .my-works .works .work.work-six {
-  background: url(/src/projectImg/3D\ Logo.png) no-repeat center center/cover;
+  background: url(/src/projectImg/paralallax.png) no-repeat center center/cover;
   transform: translateX(50px);
 }
 body .contenedor-padre {
