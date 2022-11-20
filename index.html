@@ -161,19 +161,20 @@
         </div>
     
     </header>
-    <main>
+    <main class="main">
         <div class="content">
             <h1>Tiago Ocampo</h1>
             <h2><span>< Interactive Front-end Developer ></span></h2>
             <p>Soy Tiago Ocampo, un Web Developer que esta mas guiado por el Front-end que le encanta estilisar y hacer codigo. <br> Este es mi portfolio donde puedes encontrar info sobre mi ;)</p>
             <button class="info" id="btn-abrir-modal3"><a href="#modal">Sobre mi</a></button>
+            <button class="info info2" id="btn-abrir-modal3"><a href="#aboutAndContact">Sobre mi</a></button>
         </div>
             <!-- <img class="logo" src="src/img/logo.png" alt=""> -->
     </main>
 
     <!-- PROYECTOS -->
 
-    <a class="button" href="#works">Mis proyectos <br> <i class="fa-solid fa-arrow-down"></i></a>
+    <a class="button works" href="#works">Mis proyectos <br> <i class="fa-solid fa-arrow-down"></i></a>
     <section id="works" class="my-works">
         <div class="works-content">
             <h1>Mis proyectos</h1>
@@ -241,6 +242,65 @@
                 </div>
             </div>
         </div>
+        <section id="aboutAndContact" class="aboutAndContact">
+            <!-- ABOUT Y CONTACTO -->
+            <div class="contenedor-padre">
+                <div class="contenedor">
+                    <div id="about" class="about-container">
+                        <div class="about">
+                            <h3>Sobre mi</h3>
+                            <div class="about-content">
+                                <h4>Sobre mi</h4>
+                                <h5>Interactive Front-end Developer</h5>
+                                <p>Soy Tiago Ocampo, <span>web developer</span> mis proyectos están orientados al <span>Frontend</span>, dónde me desenvuelvo con mayor fluidez. Con experiencia en <span>HTML, CSS y Javascript</span>. <br>
+                                En este portafolio podrás encontrar algunos de mis proyectos, disfruta tu visita.</p>
+                            </div>
+                            <h6>Skills</h6>
+                            <div class="skills">
+                                <i class="fa-brands fa-css3-alt"><span>CSS</span></i>
+                                <i class="fa-brands fa-js"><span>Javascript</span></i>
+                                <i class="fa-brands fa-html5"><span>HTML</span></i>
+                                <i class="fa-brands fa-sass"><span>SASS</span></i>
+                                <i class="fa-brands fa-git-alt"><span>GIT</span></i>
+                                <i class="fa-brands fa-github"><span>GITHUB</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact" class="contact-container">
+                        <h3 class="textfondo">Contacto</h3>
+                        <div class="contact-wrapper animated bounceInUp">
+                            <div class="contact-form">
+                                <h3>Hablemos!</h3>
+                                <p>Ansioso por nuevos proyectos contigo!</p>
+                                <form id="form">
+                                    <p>
+                                        <label for="from_name">Nombre</label>
+                                        <input type="text" name="from_name" id="from_name">
+                                    </p>
+                                    <p>
+                                        <label for="email_id">Tu email</label>
+                                        <input type="text" name="email_id" id="email_id">
+                                    </p>
+                                    <p>
+                                        <label>Asunto</label>
+                                        <input required type="text" name="affair">
+                                    </p>
+                                    <p class="block">
+                                        <label for="message">Mensaje</label>
+                                        <textarea required name="message" rows="3"></textarea>
+                                    </p>
+
+                                <p class="block">
+                                    <button type="submit" id="button">Enviar</button>
+                                </p>
+
+                                </form>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
     </section>
 
     <!-- FOOTER -->

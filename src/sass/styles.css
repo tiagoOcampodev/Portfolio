@@ -422,21 +422,21 @@ body .my-works .works .work.work-one {
 }
 body .my-works .works .work.work-two {
   background: url(/src/projectImg/DesarrolloWeb.png) no-repeat center center/cover;
-  transform: translateX(50px);
+  transform: translateX(30px);
 }
 body .my-works .works .work.work-three {
   background: url(/src/projectImg/wall-eControled.png) no-repeat center center/cover;
 }
 body .my-works .works .work.work-four {
   background: url(/src/projectImg/tiagoPiano.png) no-repeat center center/cover;
-  transform: translateX(50px);
+  transform: translateX(30px);
 }
 body .my-works .works .work.work-five {
   background: url(/src/projectImg/randomColor.png) no-repeat center center/cover;
 }
 body .my-works .works .work.work-six {
   background: url(/src/projectImg/paralallax.png) no-repeat center center/cover;
-  transform: translateX(50px);
+  transform: translateX(30px);
 }
 body .contenedor-padre {
   overflow: hidden;
@@ -892,5 +892,193 @@ body #preloader {
     align-items: center;
     background-color: inherit;
     padding: 2%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    transform: translateY(400px) translateX(-150px) scale(0.9);
+  }
+  .main {
+    left: 200px;
+    top: 140px;
+  }
+  .main .content .info {
+    display: block;
+  }
+  .main .content .info2 {
+    display: none;
+  }
+  .aboutAndContact {
+    position: relative;
+    display: none;
+    border: 2px solid #26242e;
+  }
+  .aboutAndContact .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  dialog {
+    max-width: 900px;
+    position: fixed;
+    left: -170px;
+    top: 50px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    transform: translateY(400px) translateX(-150px) scale(0.9);
+  }
+  .main {
+    left: 20px;
+    top: 140px;
+  }
+  .main .content .info {
+    display: block;
+  }
+  .main .content .info2 {
+    display: none;
+  }
+  .aboutAndContact {
+    position: relative;
+    display: none;
+    border: 2px solid #26242e;
+  }
+  .aboutAndContact .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  dialog {
+    max-width: 900px;
+    position: fixed;
+    left: -170px;
+    top: 50px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .container {
+    transform: translateY(400px) translateX(-150px) scale(0.8);
+  }
+  .main {
+    left: 20px;
+    top: 140px;
+  }
+  .main .content .info {
+    display: none;
+  }
+  .main .content .info2 {
+    display: block;
+  }
+  .button {
+    display: none;
+  }
+  .my-works .works .work .text {
+    transform: translateX(80px);
+  }
+  .my-works .works .work .text h3 {
+    transform: scale(1);
+  }
+  .my-works .works .work .text p {
+    margin: 0;
+    transform: scale(0.9);
+  }
+  .my-works .works .work .text a {
+    transform: scale(1) translateX(-60px);
+  }
+  .my-works .works .number {
+    transform: scale(0.9);
+  }
+  .aboutAndContact {
+    position: relative;
+    border: 2px solid #26242e;
+  }
+  .aboutAndContact .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    transform: translateY(440px) translateX(-100px) scale(0.8);
+  }
+  .main {
+    left: 20px;
+    top: 140px;
+  }
+  .main .content .info {
+    display: none;
+  }
+  .main .content .info2 {
+    display: block;
+  }
+  .button {
+    display: none;
+  }
+  .my-works .works .work .text {
+    transform: translateX(80px);
+  }
+  .my-works .works .work .text h3 {
+    transform: scale(0.9);
+  }
+  .my-works .works .work .text p {
+    margin: 0;
+    transform: scale(0.8);
+  }
+  .my-works .works .work .text a {
+    transform: scale(0.9) translateX(-60px);
+  }
+  .my-works .works .number {
+    transform: scale(0.8);
+  }
+  .aboutAndContact {
+    position: relative;
+    border: 2px solid #26242e;
+  }
+  .aboutAndContact .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    transform: translateY(500px) scale(0.6);
+  }
+  .main {
+    left: 20px;
+    top: 100px;
+  }
+  .main .content .info {
+    display: none;
+  }
+  .main .content .info2 {
+    display: block;
+  }
+  .button {
+    display: none;
+  }
+  .my-works .works .work .text {
+    transform: translateX(120px);
+  }
+  .my-works .works .work .text h3 {
+    transform: scale(0.7);
+  }
+  .my-works .works .work .text p {
+    margin: 0;
+    transform: scale(0.6);
+  }
+  .my-works .works .work .text a {
+    transform: scale(0.8) translateX(-60px);
+  }
+  .my-works .works .number {
+    transform: scale(0.7);
+  }
+  .aboutAndContact {
+    position: relative;
+    border: 2px solid #26242e;
+  }
+  .aboutAndContact .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */
