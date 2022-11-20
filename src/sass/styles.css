@@ -83,7 +83,7 @@ body header.sticky a {
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body header.sticky i {
+body header.sticky .footer i {
   background: linear-gradient(90deg, rgb(19, 20, 24) 4%, rgb(48, 43, 85) 92%, rgb(61, 63, 73) 100%);
   -webkit-background-clip: text;
           background-clip: text;
