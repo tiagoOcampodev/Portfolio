@@ -69,19 +69,16 @@
     <!-- CONTENIDO -->
 
     <!-- ENCABEZADO Y MENU -->
-    <header>
-        <nav>
-            <a href="index.html"><img class="icon" src="src/img/logo.png" alt=""></a>
+    <header id="header">
+
+        <div id="normal-header">
+          <a href="#home" id="image-link"><img src="https://i.ibb.co/LxGJ5gF/reverse-white.png" alt="Reverse Logo" id="header-img"/></a>
+    
+          <nav id="nav-bar">
             <ul>
-                <li>
-                    <a class="active" href="#home">Inicio</a>
-                </li>
-                <li>
-                    <a id="btn-abrir-modal2">Contacto</a>
-                </li>
-                <li>
-                    <a id="btn-abrir-modal">Info</a>
-                </li>
+              <li class="nav-link" id="menu-item"><a href="#home" class="menu-link"> Inicio </a></li>
+                <li class="nav-link" id="menu-item"><a class="menu-link" id="btn-abrir-modal2">Contacto</a></li>
+                <li class="nav-link" id="menu-item"><a class="menu-link" id="btn-abrir-modal">Info</a></li>
                     <dialog id="modal">
                         <!-- ABOUT Y CONTACTO -->
                         <div class="contenedor-padre">
@@ -144,14 +141,25 @@
                     </dialog>
                 </li>
             </ul>
-            <footer>
-                <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/tiago-ocampo-ferreira-884658255/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a target="_blank" href="https://github.com/tiagoOcampodev"><i class="fa-brands fa-github"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/tiago0campo/"><i class="fa-brands fa-square-instagram"></i></a>
-                </li>
-            </footer>
-        </nav>
+          </nav>
+        </div>
+    
+    
+        <div id="responsive-header">
+          <div id="responsive-logo-button">
+            <a href="#home" id="image-link"><img src="https://i.ibb.co/0jM3ZvH/reverse-black.png" alt="Reverse Logo" id="header-img-black"/></a>
+            <button id="image-button-black"><img src="https://i.ibb.co/yfM3fdZ/dropdown-menu-black.png" alt="Dropdown Menu" id="dropdown-button-black" /></button>
+          </div>
+    
+          <div id="responsive-nav-bar">
+            <ul>
+              <li class="nav-link" id="responsive-home-item"><a href="#home" class="responsive-menu-link"> Home </a></li>
+              <li class="nav-link" id="responsive-features-item"><a href="" class="responsive-menu-link"> Features </a></li>
+              <li class="nav-link" id="responsive-products-item"><a href="" class="responsive-menu-link"> Products </a></li>
+              </ul>
+          </div>
+        </div>
+    
     </header>
     <main>
         <div class="content">
@@ -266,6 +274,7 @@
     <script type="text/javascript">
     emailjs.init('EPyCqcvJffR6iDT02')
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/7bb6609722.js" crossorigin="anonymous"></script>
     <script src="js/app1.js"></script>
     <script src="js/particles.js"></script>

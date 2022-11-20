@@ -1,14 +1,14 @@
-//OJO
-let punto = document.querySelector(".punto");
-let ojo = document.querySelector(".ojo");
+  // Responsive menu
+  $("#responsive-nav-bar").hide();
 
-document.onmousemove = (e) => {
-    let x = e.clientX * 100 / window.innerWidth + "%";
-    let y = e.clientY * 100 / window.innerHeight + "%";
+  $("#image-button-black").click(function(){
+    $("#responsive-nav-bar").slideToggle();
+  });
 
-    punto.style.left = x;
-    punto.style.top = y;
-}
+  $("#responsive-home-item , #responsive-features-item , #responsive-products-item , #responsive-media-item , #responsive-pricing-item").click(function(){
+    $("#responsive-nav-bar").slideToggle(200);
+  })
+
 ///MODAL========================================
 const btnAbrirModal = document.querySelector("#btn-abrir-modal");
 const btnAbrirModal2 = document.querySelector("#btn-abrir-modal2");
@@ -38,10 +38,4 @@ btnAbrirModal.addEventListener("click" , ()=>{
     modal.classList.toggle("abierto2");
 })
 
-
-/////////////NAV FIXED===================================
-window.addEventListener("scroll" , function (){
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky",this.window.scrollY > 0);
-})
 
