@@ -69,6 +69,7 @@ body{
 
     main{
         width: 100%;
+        height: auto;
         position: absolute;
         left: 120px;
         top: 30%;
@@ -132,8 +133,9 @@ body{
         position: absolute;
         width: 30%;
         height: 100%;
-        right: 0px;
-        top: 50px;
+        right: -30px;
+        top: 20px;
+        transform: scale(0.6);
     
         ///////////////////CIRCULOS
         & .circle{
@@ -930,11 +932,13 @@ body{
 }
 
 // RESPONSIVE GENERAL 
-
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1000px){
     .main{
         left: 20px;
-        top: 140px;
+        top: 150px;
+        width: 100%;
+        margin-top: 10%;
+        transform: scale(1.2);
         & .content{
             & .info{
                 display: block;
@@ -958,17 +962,27 @@ body{
         position: fixed;
         left: -40px;
         top: 20px;
-        margin-right: 20px;
+        transform: scale(0.8);
+    }
+    dialog{
+        position: fixed;
+        transform: translate(-10%,-10%);
+        width:90%;
+        min-height: 104%;
     }
 }
-@media screen and (max-width: 970px){
+@media screen and (max-width: 999px){
     .container{
-        transform:translateY(400px) translateX(-150px) scale(0.8);
+        transform:translateY(440px) translateX(-100px) scale(0.8);
+        display: none;
     }
     .main{
         left: 20px;
-        top: 140px;
+        top: 30px;
+        margin-top: 10%;
+        width: 130%;
         & .content{
+            transform: scale(0.9);
             & .info{
                 display: none;
             }
@@ -986,42 +1000,44 @@ body{
 
             & .work{
                 & .text{
-                    transform: translateX(60px);
+                    transform: translateX(80px);
                     & h3{
-                        transform: scale(1);
+                        transform: scale(0.9);
                     }
                     & p{
                         margin: 0;
-                        transform: scale(0.9);
+                        transform: scale(0.8);
                     }
                     & a{
-                        transform: scale(1) translateX(-60px);
+                        transform: scale(0.9) translateX(-60px);
                     }
                 }
             }
 
             & .number{
-                transform: scale(0.9);
+                transform: scale(0.8);
             }
         }
     }
-    .aboutAndContact{
-        position: relative;
-        border: 2px solid #26242e;
-        & .contenedor{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
+    dialog{
+        position: fixed;
+        transform: translate(-20%,-0%);
+        width:90%;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (min-width: 666px){
     .container{
-        transform:translateY(440px) translateX(-100px) scale(0.8);
+        display: block;
+        & svg{
+            transform: scale(0.5);
+        }
     }
     .main{
-        left: 20px;
-        top: 140px;
+        left: 10px;
+        top: 50px;
+        width: 110%;
         & .content{
+            transform: scale(0.8);
             & .info{
                 display: none;
             }
@@ -1067,14 +1083,72 @@ body{
         }
     }
 }
-@media screen and (max-width: 525px){
+@media screen and (max-width: 600px){
+    .container{
+        transform:translateY(440px) translateX(-100px) scale(0.8);
+        display: none;
+    }
+    .main{
+        left: 10px;
+        top: 50px;
+        width: 110%;
+        & .content{
+            transform: scale(0.8);
+            & .info{
+                display: none;
+            }
+            & .info2{
+                display: block;
+            }
+        }
+    }
+    .button{
+        display: none;
+    }
+    .my-works{
+
+        & .works{
+
+            & .work{
+                & .text{
+                    transform: translateX(80px);
+                    & h3{
+                        transform: scale(0.9);
+                    }
+                    & p{
+                        margin: 0;
+                        transform: scale(0.8);
+                    }
+                    & a{
+                        transform: scale(0.9) translateX(-60px);
+                    }
+                }
+            }
+
+            & .number{
+                transform: scale(0.8);
+            }
+        }
+    }
+    .aboutAndContact{
+        position: relative;
+        border: 2px solid #26242e;
+        & .contenedor{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media screen and (min-width: 400px){
     .container{
         transform:translateY(500px) scale(0.6);
     }
     .main{
         left: 20px;
-        top: 100px;
+        top: -15px;
+        width: 100%;
         & .content{
+            transform: scale(0.8);
             & .info{
                 display: none;
             }
@@ -1120,57 +1194,3 @@ body{
         }
     }
 }
-@media screen and (max-width: 425px){
-    .container{
-        transform:translateY(500px) scale(0.6);
-    }
-    .main{
-        left: 20px;
-        top: 100px;
-        & .content{
-            & .info{
-                display: none;
-            }
-            & .info2{
-                display: block;
-            }
-        }
-    }
-    .button{
-        display: none;
-    }
-    .my-works{
-
-        & .works{
-
-            & .work{
-                & .text{
-                    transform: translateX(120px);
-                    & h3{
-                        transform: scale(0.7);
-                    }
-                    & p{
-                        margin: 0;
-                        transform: scale(0.6);
-                    }
-                    & a{
-                        transform: scale(0.8) translateX(-60px);
-                    }
-                }
-            }
-
-            & .number{
-                transform: scale(0.7);
-            }
-        }
-    }
-    .aboutAndContact{
-        position: relative;
-        border: 2px solid #26242e;
-        & .contenedor{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    }
-}
-
