@@ -1,3 +1,5 @@
+// SCRIPT FINAL 
+  
   // Responsive menu
   $("#responsive-nav-bar").hide();
 
