@@ -340,9 +340,6 @@ body{
                     top: 5px;
                     left: 5px;
                 }
-                &:hover .text{
-                    transform: scale(1.1);
-                }
                 &::before{
                     content:"";
                     position: absolute;
@@ -855,8 +852,7 @@ body{
   outline: 0;
 }
 
-@media screen and (min-width: 1200px){}
-@media screen and (max-width: 1024px){}
+
 
 // NAV RESPONSIVE 
 @media only screen and (min-width : 200px) and (max-width : 860px) {
@@ -930,43 +926,8 @@ body{
 }
 
 // RESPONSIVE GENERAL 
-@media screen and (min-width: 1200px){
-    .container{
-        transform:translateY(400px) translateX(-150px) scale(0.9);
-    }
-    .main{
-        left: 200px;
-        top: 140px;
-        & .content{
-            & .info{
-                display: block;
-            }
-            & .info2{
-                display: none;
-            }
-        }
-    }
-    .aboutAndContact{
-        position: relative;
-        display: none;
-        border: 2px solid #26242e;
-        & .contenedor{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-    dialog{
-        max-width: 900px;
-        position: fixed;
-        left: -170px;
-        top: 50px;
-        margin-right: 20px;
-    }
-}
-@media screen and (max-width: 1024px){
-    .container{
-        transform:translateY(400px) translateX(-150px) scale(0.9);
-    }
+
+@media screen and (min-width: 1024px){
     .main{
         left: 20px;
         top: 140px;
@@ -1021,7 +982,7 @@ body{
 
             & .work{
                 & .text{
-                    transform: translateX(80px);
+                    transform: translateX(60px);
                     & h3{
                         transform: scale(1);
                     }
@@ -1090,6 +1051,59 @@ body{
 
             & .number{
                 transform: scale(0.8);
+            }
+        }
+    }
+    .aboutAndContact{
+        position: relative;
+        border: 2px solid #26242e;
+        & .contenedor{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media screen and (max-width: 525px){
+    .container{
+        transform:translateY(500px) scale(0.6);
+    }
+    .main{
+        left: 20px;
+        top: 100px;
+        & .content{
+            & .info{
+                display: none;
+            }
+            & .info2{
+                display: block;
+            }
+        }
+    }
+    .button{
+        display: none;
+    }
+    .my-works{
+
+        & .works{
+
+            & .work{
+                & .text{
+                    transform: translateX(120px);
+                    & h3{
+                        transform: scale(0.7);
+                    }
+                    & p{
+                        margin: 0;
+                        transform: scale(0.6);
+                    }
+                    & a{
+                        transform: scale(0.8) translateX(-60px);
+                    }
+                }
+            }
+
+            & .number{
+                transform: scale(0.7);
             }
         }
     }

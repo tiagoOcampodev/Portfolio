@@ -330,9 +330,6 @@ body .my-works .works .work:hover .number {
   top: 5px;
   left: 5px;
 }
-body .my-works .works .work:hover .text {
-  transform: scale(1.1);
-}
 body .my-works .works .work::before {
   content: "";
   position: absolute;
@@ -894,41 +891,7 @@ body #preloader {
     padding: 2%;
   }
 }
-@media screen and (min-width: 1200px) {
-  .container {
-    transform: translateY(400px) translateX(-150px) scale(0.9);
-  }
-  .main {
-    left: 200px;
-    top: 140px;
-  }
-  .main .content .info {
-    display: block;
-  }
-  .main .content .info2 {
-    display: none;
-  }
-  .aboutAndContact {
-    position: relative;
-    display: none;
-    border: 2px solid #26242e;
-  }
-  .aboutAndContact .contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  dialog {
-    max-width: 900px;
-    position: fixed;
-    left: -170px;
-    top: 50px;
-    margin-right: 20px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .container {
-    transform: translateY(400px) translateX(-150px) scale(0.9);
-  }
+@media screen and (min-width: 1024px) {
   .main {
     left: 20px;
     top: 140px;
@@ -974,7 +937,7 @@ body #preloader {
     display: none;
   }
   .my-works .works .work .text {
-    transform: translateX(80px);
+    transform: translateX(60px);
   }
   .my-works .works .work .text h3 {
     transform: scale(1);
@@ -1030,6 +993,48 @@ body #preloader {
   }
   .my-works .works .number {
     transform: scale(0.8);
+  }
+  .aboutAndContact {
+    position: relative;
+    border: 2px solid #26242e;
+  }
+  .aboutAndContact .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 525px) {
+  .container {
+    transform: translateY(500px) scale(0.6);
+  }
+  .main {
+    left: 20px;
+    top: 100px;
+  }
+  .main .content .info {
+    display: none;
+  }
+  .main .content .info2 {
+    display: block;
+  }
+  .button {
+    display: none;
+  }
+  .my-works .works .work .text {
+    transform: translateX(120px);
+  }
+  .my-works .works .work .text h3 {
+    transform: scale(0.7);
+  }
+  .my-works .works .work .text p {
+    margin: 0;
+    transform: scale(0.6);
+  }
+  .my-works .works .work .text a {
+    transform: scale(0.8) translateX(-60px);
+  }
+  .my-works .works .number {
+    transform: scale(0.7);
   }
   .aboutAndContact {
     position: relative;
