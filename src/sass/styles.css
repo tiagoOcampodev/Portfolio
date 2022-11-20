@@ -742,6 +742,12 @@ body #preloader {
   color: #C52233;
 }
 
+.cerrar {
+  background: none;
+  border: none;
+  font-size: 2em;
+}
+
 /* ----- General Header CSS ------ */
 #header {
   position: fixed;
