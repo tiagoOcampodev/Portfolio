@@ -698,7 +698,7 @@ body{
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 10000000000000;
         border-radius: 5px;
     }
 }
@@ -825,7 +825,8 @@ body{
 }
 
 #header-img {
-  width: 250px;
+  width: 100%;
+  border-radius: 50%;
   margin-left: 15%;
 }
 
@@ -913,9 +914,10 @@ body{
       padding: 0;
     }
     #header-img-black {
-      margin-left: 5%;
+      margin-left: 8%;
       margin-top: 3%;
-      width: 50%;
+      border-radius: 50%;
+      width: 100%;
       height: auto;
     }
     #dropdown-button-black {
